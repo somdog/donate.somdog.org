@@ -1,0 +1,271 @@
+@import url(//fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800);
+@import url(//fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700);
+
+* {
+  margin: 0;
+  border: 0;
+  padding: 0;
+  line-height: 1em;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  color: white;
+  text-shadow: 0px 1px 1px rgba(0, 10, 0, 0.5);
+}
+
+body {
+  background: url(/images/DSC_0071.jpg) no-repeat center center fixed;
+  background-size: cover;
+
+  .shade {
+    z-index: 10;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.6);
+  }
+
+  .frame {
+    width: 490px;
+    z-index: 100;
+    position: relative;
+    margin: 0 auto;
+  }
+
+  > nav {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 100;
+
+    a {
+      font-family: 'Open Sans', sans-serif;
+      color: white;
+      text-decoration: none;
+      display: block;
+      padding: 12px 24px 0 0;
+    }
+  }
+
+  > hgroup {
+    margin: 50px 0 0 25px;
+
+    h2 {
+      margin-top: 7px;
+    }
+  }
+
+  > p, > strong a {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: white;
+    margin: 60px 0 0 25px;
+    display: block;
+  }
+
+  > p {
+    background: rgba(255, 240, 255, 0.4);
+    padding: 20px;
+    display: inline-block;
+  }
+
+  > strong a {
+    margin-top: 20px;
+    font-size: 28px;
+    font-weight: 600;
+    text-decoration: none;
+  }
+
+  >form {
+    margin: 50px 0 0 25px;
+
+    legend {
+      font-family: 'Open Sans', sans-serif;
+      font-weight: 600;
+      font-size: 20px;
+      color: white;
+      margin: 0 0 10px 0;
+    }
+
+    input[type=submit] {
+      display: block;
+      margin: 35px auto;
+      padding: 20px;
+      text-transform: uppercase;
+      border-radius: 2px;
+      font-family: 'Open Sans', sans-serif;
+      color: white;
+      font-size: 36px;
+      background: rgba(0, 10, 0, 0.5);
+      cursor: pointer;
+
+      &:hover {
+        box-shadow: 0 0 35px rgba(220, 255, 220, 0.7);
+      }
+    }
+
+    > div {
+      background: rgba(240, 255, 255, 0.3);
+      padding: 20px;
+      width: 436px;
+      border-radius: 3px;
+      box-shadow: 0px 2px 1px rgba(0, 15, 0, 0.6);
+      margin: 0 0 50px 0;
+
+      > fieldset {
+        display: none;
+
+        &:first-child {
+          display: block;
+        }
+      }
+
+      input[type=submit] {
+        display: none;
+      }
+    }
+
+    fieldset {
+      > label {
+        color: white;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 600;
+        margin: 25px 0 0 0;
+        display: block;
+      }
+
+      > input {
+        outline: none;
+        background: rgba(240, 255, 255, 0.3);
+        padding: 16px;
+        text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.7);
+        font-weight: 700;
+        font-family: 'Open Sans Condensed', sans-serif;
+        font-size: 28px;
+        color: rgba(0, 15, 0, 0.9);
+        margin: 10px 0 0 0;
+        width: 400px;
+      }
+
+      ol {
+        list-style: none;
+
+        li {
+          display: inline-block;
+          background: rgba(240, 255, 255, 0.3);
+          color: rgba(0, 15, 0, 0.9);
+          margin: 0 1px 0 0;
+          text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.7);
+          font-weight: 700;
+          font-family: 'Open Sans Condensed', sans-serif;
+          font-size: 32px;
+          padding: 16px;
+          cursor: pointer;
+          outline: none;
+
+          &.selected {
+            border-top: 20px solid rgba(0, 15, 0, 0.45);
+            margin-top: -20px;
+          }
+
+          &:before {
+            content: '$';
+          }
+
+          &:hover {
+            background: rgba(0, 15, 0, 0.25);
+            color: white;
+            text-shadow: 1px 1px 1px rgba(0, 15, 0, 0.9);
+          }
+
+          &:nth-child(5) {
+            width: 75px;
+
+            &:before {
+              content: '';
+            }
+
+            &.selected:before, &.numeric:before {
+              content: '$';
+            }
+          }
+        }
+      }
+
+      &#card {
+        width: 365px;
+        height: 240px;
+        margin: 45px auto;
+        background: red;
+        border-radius: 5px;
+        background: rgba(0, 15, 0, 0.65);
+
+        h4 {
+          opacity: 0.8;
+          padding: 20px 0 0 20px;
+          font-family: 'Open Sans Condensed', sans-serif;
+          font-weight: 700;
+          font-size: 18px;
+        }
+
+        fieldset {
+          margin: 20px 0 0 0;
+        }
+
+        label {
+          text-transform: uppercase;
+          font-size: 14px;
+          margin: 0 0 0 20px;
+
+          em {
+            font-style: normal;
+            font-weight: 300;
+            opacity: 0.8;
+          }
+        }
+
+        input {
+          font-size: 16px;
+          font-weight: 400;
+          margin: 8px 0 0 20px;
+          width: auto;
+          text-shadow: none;
+          padding: 10px 12px;
+          font-family: 'Open Sans', sans-serif;
+          background: rgba(240, 255, 255, 0.8);
+          border-radius: 2px;
+          border: 1px solid rgba(0, 15, 0, 0.9);
+          box-shadow: 0px 1px 1px rgba(240, 255, 240, 0.3);
+        }
+
+        fieldset#number {
+          input {
+            width: 296px;
+          }
+        }
+
+        fieldset#expiration {
+          display: inline-block;
+          width: 240px;
+
+          input {
+            width: 100px;
+          }
+        }
+
+        fieldset#cvc {
+          display: inline-block;
+
+          input {
+            width: 40px;
+          }
+        }
+      }
+    }
+  }
+}

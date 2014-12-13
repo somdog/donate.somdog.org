@@ -1,0 +1,43 @@
+nav
+  a href="http://www.somdog.org" Back to somdog.org
+
+hgroup
+  h1 Helping som|dog is easy.
+  h2 Just fill out the form below.
+
+form#payment-form method="post" action="/donate"
+  input#donationAmount type="hidden" name="amount"
+
+  legend I'd like to donate
+
+  div
+    fieldset
+      ol#amounts
+        li 10
+        li 25
+        li 50
+        li 100
+        li contenteditable="true" Other
+
+    fieldset#name
+      label Your name
+      input#cardName
+
+    fieldset#card
+      h4 Payment details
+
+      fieldset#number
+        label Card number
+        input#cardNumber
+
+      fieldset#expiration
+        label
+          | Expiration
+          em &nbsp;(MM/YY)
+        input#cardExpiration
+
+      fieldset#cvc
+        label CVC code
+        input#cardCvc
+
+    input#submitButton type="submit" value="Donate!"
