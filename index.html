@@ -1,0 +1,79 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>som|dog Donations</title>
+    <style>
+      @import url(//fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800);
+      @import url(//fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700);
+      
+      * {
+        margin: 0;
+        border: 0;
+        padding: 0;
+        line-height: 1em;
+      }
+      
+      body {
+        background: url(/Untitled-1.png) no-repeat center center fixed;
+        background-size: cover;
+        font-family: 'Open Sans', sans-serif;
+      }
+
+      nav {
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        z-index: 100;
+      }
+      
+      nav a {
+        font-family: 'Open Sans', sans-serif;
+        color: white;
+        text-decoration: none;
+        display: block;
+        padding: 12px 24px 0px 0px;
+      }
+      
+      .shade {
+        z-index: 10;
+        position: fixed;
+        top: 0px;
+        right: 0px;
+        bottom: 0px;
+        left: 0px;
+        background: rgba(0, 0, 0, 0.6);
+      }
+      
+      .frame {
+        width: 490px;
+        z-index: 100;
+        position: relative;
+        margin: 0px auto;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <a href="http://www.somdog.org">Back to somdog.org</a>
+    </nav>
+    
+    <div class="shade"></div>
+    
+    <div class="frame">
+      <iframe frameBorder="0" height="1200" src="https://somdog.tilt.com/winter-fundraiser/checkout/payment" style="border-radius: 3px;" width="490"></iframe>
+    </div>
+    
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-35530731-1', 'auto');
+      ga('send', 'pageview');
+
+    </script>
+  </body>
+</html>
